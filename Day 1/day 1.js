@@ -85,7 +85,7 @@ console.log("\n\n\n");
 //-----------------------------------------------------------------------------------------
 
 var length = 100;                               // Number
-var lastName = "JohnsRahulon";                      // String
+var lastName = "Rahul";                         // String
 var x = {firstName:"Rahul", lastName:"K M"};    // Object
 
 typeof undefined           // undefined
