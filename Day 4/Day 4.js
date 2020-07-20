@@ -98,9 +98,9 @@ else{
 
 tS = prompt("Enter the total sale values, the employee has generated one after the other with comas \n Ex: 2000,3000,5000,1000");
 function SalesCommision(n){
-    (n>20000)              ? c = 0.1*n  : 
-    (n>=10001 && n<=20000) ? c = 0.07*n : 
-    (n>=5001  && n<=10000) ? c = 0.05*n :
+    (n>20000)              ? c = (5000*0.02)+(5000*0.05)+(10000*0.07)+(0.1*(n-20000))  : 
+    (n>=10001 && n<=20000) ? c = (5000*0.02)+(5000*0.05)+((n-10000)*0.07)  : 
+    (n>=5001  && n<=10000) ? c = (5000*0.02)+((n-5000)*0.05)  :
     (n>=0     && n<=5000 ) ? c = 0.02*n : c = 0;
     console.log("Commision : " + Math.round(c));
     return Math.round(c); 
