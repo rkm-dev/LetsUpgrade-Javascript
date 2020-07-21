@@ -173,6 +173,6 @@ let question = "do you agree?";
 let yes = ()=>alert("You agree.");
 let no  = ()=>alert("You canceled the execution.");
 
-let ask = (q,y,n)=>confirm(question) ? y() : n();
+let ask = (q,y,n)=>confirm(q) ? y() : n();
 
 ask(question,yes,no);
