@@ -1,0 +1,45 @@
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+    transition: .3s ease-in-out;
+  }
+
+
+#timeBox , #nameBox { 
+    width: 10em;
+    height: 2em;
+    padding: 0.8em;
+    margin: 2em;
+    border: inset;
+    background-color: transparent;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bolder;
+    box-sizing: content-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#btn{
+    float: right;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 2em;
+    outline: 0;
+    color: rgba(255, 255, 255);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+
+.btn-color{
+    background-color: black;
+    color: white;
+}

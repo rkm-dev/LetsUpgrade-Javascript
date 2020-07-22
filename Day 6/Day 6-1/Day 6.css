@@ -1,0 +1,55 @@
+body {
+    background: rgb(12, 12, 12);
+    transition: background 1s; 
+}
+
+.hidden{
+    display: none;
+}
+
+#first{
+    display: flex;
+}
+
+#start {
+    text-align: center;
+}
+
+input[type='text'] {
+    padding: 1em;
+    border: none;
+    border-radius: 0.2em;
+    background: rgb(219, 219, 219);
+    transition: background 0.3s;
+    color: black; 
+}
+
+input[type="text"]:focus {
+    background: white;
+  }  
+  input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  input[type="text"]:focus {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  input[type="text"]:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  input[type="text"]:focus {
+    background: transparent;
+  }
+  input[type="text"]:focus {
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 0.6em;
+  }
+
+#table-panel {
+    width: fit-content;
+    padding: 2em;
+    margin: 2em;
+    border: inset;
+    background-color: olivedrab;
+    color: ghostwhite;
+    font-size: large;
+}
