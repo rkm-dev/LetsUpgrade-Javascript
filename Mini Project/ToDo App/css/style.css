@@ -1,0 +1,176 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    transition: background 1s; 
+}
+
+/* container */
+.container{
+    padding:10px;
+    width:480px;
+    margin:0 auto;
+}
+
+/* header */
+.header{
+    width: 480px;
+    height:220px;
+    background-image: url('../img/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 80px 80px 0 0;
+    position: relative;
+}
+
+#date{
+    position: absolute;
+    bottom: 170px;
+    left: 150px;
+    color: #FFF;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.content{
+    width:480px;
+    height: 350px;
+    max-height:330px;
+    background-color: #FFF;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.content ul{
+    padding:0;
+    margin:0;
+}
+
+.item{
+    width:460px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    font-size: 20px;
+    left:43px;
+    top:8px;
+    background-color: #FFF;
+    max-width:285px;
+}
+.strike{
+    text-decoration: line-through;
+    color : rgb(70, 66, 66);
+}
+.item i.del{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.del:hover{
+    color:#e70808;
+    cursor: pointer;
+}
+
+
+/* Checkbox */
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.5em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.8em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.1em;
+    padding-bottom: 0.1em;
+    margin-right: 0.5em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+
+
+
+
+
+/* ------------ add item ------------ */
+.add-to-do{
+    position: relative;
+    width: 460px;
+    height:40px;
+    background-color: #FFF;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-to-do i{
+    position: absolute;
+    font-size: 40px;
+    color: #0006af;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    height: 40px;
+    width: 410px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left:10px;
+    outline: none;
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #0006af;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    color: #0006af;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    color: #0006af;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    color: #0006af;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
